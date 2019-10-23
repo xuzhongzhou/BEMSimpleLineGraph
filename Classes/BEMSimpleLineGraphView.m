@@ -1106,7 +1106,7 @@ self.property = [coder decode ## type ##ForKey:@#property]; \
     CGFloat xAxisHeight = self.enableXAxisLabel ?  self.labelFont.pointSize + 8.0f : 0.0f;
     CGFloat xOrigin = self.positionYAxisRight ? 0 : self.YAxisLabelXOffset;
     CGFloat viewWidth = self.frame.size.width - self.YAxisLabelXOffset;
-    CGFloat adjustedHeight = self.bounds.size.height - xAxisHeight;
+    CGFloat adjustedHeight = self.bounds.size.height;// - xAxisHeight;
 
     CGRect rect = CGRectMake(xOrigin, 0, viewWidth, adjustedHeight);
     return rect;
